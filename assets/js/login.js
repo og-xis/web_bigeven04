@@ -48,7 +48,7 @@ $(function(){
         e.preventDefault()
         $.ajax({
             method:'POST',
-            url:'/api/reguser',
+            url:'/api/login',
             data:$('#form_login').serialize(),
             success:function(res){
                 if(res.status!==0){
